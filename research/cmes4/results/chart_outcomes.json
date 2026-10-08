@@ -1,0 +1,62 @@
+[
+ {
+  "label": "CMES4 as traded (5 ES)",
+  "assume": "45% hit 2R, every setup (2.3 a day)",
+  "p10": -0.4,
+  "median": 0.9,
+  "p90": 2.3,
+  "p99": 3.5,
+  "p_up_30": 0.0,
+  "p_down_10": 0.0
+ },
+ {
+  "label": "CMES4 at full margin (35 ES)",
+  "assume": "45% hit 2R, every setup (2.3 a day)",
+  "p10": -3.1,
+  "median": 6.2,
+  "p90": 16.8,
+  "p99": 26.8,
+  "p_up_30": 0.5,
+  "p_down_10": 0.8
+ },
+ {
+  "label": "CMES4 v2 at 1% risk",
+  "assume": "+0.20R a trade, 1.25 a day",
+  "p10": -5.4,
+  "median": 2.1,
+  "p90": 11.5,
+  "p99": 21.0,
+  "p_up_30": 0.1,
+  "p_down_10": 1.2
+ },
+ {
+  "label": "WTI breakout at 1.5% risk",
+  "assume": "playbook model, +0.15R, 0.6 a day",
+  "p10": -6.6,
+  "median": 0.1,
+  "p90": 10.8,
+  "p99": 23.9,
+  "p_up_30": 0.4,
+  "p_down_10": 1.6
+ },
+ {
+  "label": "WTI breakout at 3% risk",
+  "assume": "playbook model, +0.15R, 0.6 a day",
+  "p10": -13.2,
+  "median": -0.2,
+  "p90": 21.9,
+  "p99": 51.8,
+  "p_up_30": 5.3,
+  "p_down_10": 17.7
+ },
+ {
+  "label": "WTI breakout at 5% risk",
+  "assume": "playbook model, +0.15R, 0.6 a day",
+  "p10": -21.6,
+  "median": -0.9,
+  "p90": 36.7,
+  "p99": 93.6,
+  "p_up_30": 13.6,
+  "p_down_10": 30.6
+ }
+]

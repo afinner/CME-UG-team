@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+research/cmes4/results/trades_*.csv
+~$*.xlsx
