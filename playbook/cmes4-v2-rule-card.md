@@ -2,6 +2,7 @@
 
 ES (or MES) on 15-minute and 5-minute charts. Times are New York unless marked Dublin.
 Use `CMES4_v2_ticket.xlsx` for every order: it applies rules 5–8 and gives a GO / NO TRADE verdict.
+For the desk, the same rules fit on one page: `CMES4_v2_trader_sheet.pdf`.
 
 | # | Rule | Detail |
 |---|------|--------|
@@ -13,7 +14,7 @@ Use `CMES4_v2_ticket.xlsx` for every order: it applies rules 5–8 and gives a G
 | 6 | Stop-loss | 1 tick beyond the pullback bar's low (long) or high (short). Skip the trade if that is under 2 or over 12 ES points from the entry. |
 | 7 | Exits | Half the contracts at +2R with a limit order. When it fills, move the stop on the rest to the entry price, then after each 5-min bar raise it to 1 tick under the lowest low of the last three bars (long; mirror for shorts). If +2R is not reached within 60 minutes of the fill, exit everything at market. Flat by 15:55 New York (20:55 Dublin until 23 Oct, 19:55 from 26 Oct; 19:00 on 30 Oct). |
 | 8 | Size | Risk 0.5% of the CQG balance per trade; 1% only after the backtest go/no-go passes. Contracts = risk ÷ (stop points × $50 + $5), rounded down, never more than balance ÷ margin per contract. |
-| 9 | Daily limits | At most 3 CMES4 trades a day. Stop after 2 losing trades. |
+| 9 | Limits | At most 3 CMES4 trades a day; stop after 2 losing trades. Don't enter if you can't watch the trade for the next hour, or within 15 minutes of scheduled US data or the Fed. If CQG rejects an order for margin, cut the size to what margin allows. If the account is down 3% or more on the week, use 0.25% risk the following week. |
 | 10 | Log | Every setup goes in Decisions, taken or not, with its bar times. Each trade goes in Trades with the ticket's numbers (entry, stop, +2R, contracts). |
 
 ## Placing the order in CQG

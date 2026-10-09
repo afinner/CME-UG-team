@@ -3,6 +3,7 @@
 | Path | What's there |
 |---|---|
 | `report/cmes4-upper-limit.md` | How far CMES4 can take the account by 30 Oct, why it tops out, CMES4 v2, and the comparison with the WTI breakout |
+| `playbook/CMES4_v2_trader_sheet.pdf` | CMES4 v2 on one A4 page for the person trading it: what it is, how to spot it, the time you have, sizing and risk rules |
 | `playbook/cmes4-v2-rule-card.md` | The CMES4 v2 rules on one page, with CQG order steps and the go/no-go test |
 | `playbook/CMES4_v2_ticket.xlsx` | Order-ticket calculator: bar prices in, entry, stop, +2R, contracts and a GO / NO TRADE verdict out. Import into the Trading Book with File > Import > Insert new sheet(s). |
 | `research/cmes4/` | Rules engine, backtest, Monte Carlo and tests (see its README) |

@@ -11,6 +11,7 @@ python backtest.py --source synthetic --days 500                      # no-edge 
 python upper_limit.py                    # ceilings and Monte Carlo tables -> results/upper_limit.md
 python upper_limit.py --margin 14300 --v2-trades results/trades_yahoo_v2.csv
 python make_ticket.py                    # rebuilds playbook/CMES4_v2_ticket.xlsx
+python make_trader_sheet.py              # rebuilds playbook/CMES4_v2_trader_sheet.pdf (needs reportlab)
 ```
 
 | File | What it does |
@@ -21,6 +22,7 @@ python make_ticket.py                    # rebuilds playbook/CMES4_v2_ticket.xls
 | `backtest.py` | Runs eight variants (v1/v2, 3- and 4-bar, worst-case fills, all-day) and writes trades and a summary. |
 | `upper_limit.py` | Prints and saves the report's tables. |
 | `make_ticket.py` | Builds the order-ticket workbook in the Trading Book's colours. |
+| `make_trader_sheet.py` | Builds the one-page trader's sheet PDF from the same rules. |
 | `test_cmes4.py` | Replays logged situations (D001, D002, D005, T004-style entry) and checks the maths. |
 
 ## How the engine decides
